@@ -26,3 +26,37 @@ a {
   text-decoration: none;
   color: black;
 }
+
+/* splash_screen css */
+.splash-screen {
+  text-align: center;
+  padding-top: 20%;
+}
+
+.splash-screen-title {
+  font-size: 3rem;
+  color: #333;
+}
+
+.splash-screen-buttons {
+  margin-top: 20px;
+}
+
+.login-button,
+.signup-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff; /* Bootstrap's primary color */
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover,
+.signup-button:hover {
+  background-color: #0056b3; /* Slightly darker shade on hover */
+}
