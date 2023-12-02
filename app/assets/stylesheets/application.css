@@ -1,7 +1,7 @@
-@import "splash_screen";
 @import "login";
 @import "category";
 @import "forgot_password";
+@import "splash_screen";
 
 @font-face {
   font-family: 'Proxima Nova';
