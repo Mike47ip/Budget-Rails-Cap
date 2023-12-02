@@ -5,7 +5,7 @@ class CreateGroups < ActiveRecord::Migration[7.1]
       t.string :icon
       t.datetime :created_at
 
-      #t.timestamps
+      # t.timestamps
     end
   end
 end

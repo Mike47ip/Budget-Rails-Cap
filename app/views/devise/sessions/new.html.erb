@@ -1,26 +1,38 @@
-<h2>Log in</h2>
-
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+<div class="login-body">
+  <div class="nav background">
+    <%= link_to root_path, class: "left-arrow-link background" do %>
+      <%= image_tag 'back-arrow.svg', class: "left-arrow background" %>
+    <% end %>
+    <p class="registration background">Welcome</p>
+    <p class="background" id="login-link">Enter</p>
   </div>
+</div>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
+<div class="login-screen">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'custom-login-form' }) do |f| %>
+    <div class="custom-field">
+      <%= f.email_field :email, autocomplete: "email", placeholder: 'Email' %>
+    </div>
 
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+    <div class="custom-field">
+      <%= f.password_field :password, autocomplete: "current-password", placeholder: 'Password' %>
+    </div>
+
+    <div class="custom-actions">
+      <%= f.submit 'Login', class: 'custom-login-button' %>
     </div>
   <% end %>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
+  <div class="device-links">
+    <%= render "devise/shared/links", resource: resource, resource_name: resource_name, class: "link-color" %>
   </div>
-<% end %>
+</div>
 
-<%= render "devise/shared/links" %>
+<div class="links-check">
+</div>
+
+<script>
+  document.getElementById("login-link").addEventListener("click", function() {
+    document.querySelector(".custom-login-form").submit();
+  });
+</script>
