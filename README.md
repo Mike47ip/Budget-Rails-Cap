@@ -136,8 +136,8 @@ To run tests, run the following command:
 
 ### Live demo & video presentation
 
-  - [Live demo]()
-  - [Video presentation]()
+  - [Live demo](https://budget-capp1.onrender.com/)
+  - [Video presentation](https://www.loom.com/share/dd06f7cec27f49089b94bb21cc53dad0)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
