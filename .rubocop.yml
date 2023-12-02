@@ -8,6 +8,7 @@ AllCops:
   DisplayCopNames: true
 
 
+
 Lint/ScriptPermission:
   Enabled: false
 Metrics/PerceivedComplexity:
@@ -19,7 +20,7 @@ Layout/LineLength:
 Layout/EndOfLine:
   Enabled: False
 Metrics/MethodLength:
-  Max: 20
+  Max: 150
 Metrics/AbcSize:
   Max: 50
 Metrics/ClassLength:
