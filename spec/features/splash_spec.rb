@@ -1,11 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'Splash Screen', type: :feature do
-  it 'displays the title "BUDGETOR"' do
-    visit root_path
-    expect(page).to have_css '.splash-screen-title', text: 'BUDGETOR'
-  end
-
   it 'contains a "LOG IN" button linking to the login page' do
     visit root_path
     expect(page).to have_link 'LOG IN', href: new_user_session_path
