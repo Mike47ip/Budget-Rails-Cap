@@ -30,8 +30,6 @@ gem "pg"
 
 gem "devise"
 
-gem 'bootstrap', '~> 4.6', '>= 4.6.0'
-
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
