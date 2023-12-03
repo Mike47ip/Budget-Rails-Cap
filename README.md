@@ -184,6 +184,7 @@ If you like this project please show support by staring ⭐️.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - Thanks to the Microverse team for the great curriculum.
+- Thanks to  Gregoire Vella on Behance for the design presentation.
 - Thanks to the Code Reviewer(s) for the insightful feedback.
 - Thanks to our coding partners, the morning session team, and the standup team for their cooperation.
   

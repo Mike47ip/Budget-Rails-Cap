@@ -4,6 +4,7 @@
   background-color: #c3c9cf;
 }
 
+
 .nav {
   height: 50px;
   display: flex;
@@ -22,7 +23,7 @@
 }
 
 .background {
-  background-color: #0b0c0b;
+  background-color: rgb(18, 91, 151);
 }
 
 #login-link {
@@ -47,8 +48,14 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+
 .custom-field {
-  margin-bottom: 15px;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  background-color: #fff;
+  font-size: 15px;
+  margin-bottom: 15px; /* Adjusted margin */
 }
 
 .custom-field label {
@@ -71,6 +78,10 @@
 .custom-field input[type="password"] {
   border-top: 3px solid #4caf50;
 }
+
+
+
+
 
 .custom-login-button {
   font-size: 16px;
