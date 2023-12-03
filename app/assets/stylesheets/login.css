@@ -4,7 +4,6 @@
   background-color: #c3c9cf;
 }
 
-
 .nav {
   height: 50px;
   display: flex;
@@ -48,7 +47,6 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .custom-field {
   width: 100%;
   padding: 18px;
@@ -78,10 +76,6 @@
 .custom-field input[type="password"] {
   border-top: 3px solid #4caf50;
 }
-
-
-
-
 
 .custom-login-button {
   font-size: 16px;
