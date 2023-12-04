@@ -1,0 +1,38 @@
+<div class="login-body">
+  <div class="nav background">
+    <%= link_to root_path, class: "left-arrow-link background" do %>
+      <%= image_tag 'back-arrow.svg', class: "left-arrow background" %>
+    <% end %>
+    <p class="registration background">Welcome</p>
+    <p class="background" id="login-link">Enter</p>
+  </div>
+</div>
+
+<div class="login-screen">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'custom-login-form' }) do |f| %>
+    <div class="custom-field">
+      <%= f.email_field :email, autocomplete: "email", placeholder: 'Email' %>
+    </div>
+
+    <div class="custom-field">
+      <%= f.password_field :password, autocomplete: "current-password", placeholder: 'Password' %>
+    </div>
+
+    <div class="custom-actions">
+      <%= f.submit 'Login', class: 'custom-login-button' %>
+    </div>
+  <% end %>
+
+  <div class="device-links">
+    <%= render "devise/shared/links", resource: resource, resource_name: resource_name, class: "link-color" %>
+  </div>
+</div>
+
+<div class="links-check">
+</div>
+
+<script>
+  document.getElementById("login-link").addEventListener("click", function() {
+    document.querySelector(".custom-login-form").submit();
+  });
+</script>

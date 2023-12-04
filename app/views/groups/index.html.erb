@@ -1,0 +1,32 @@
+<div class="category-index">
+  <div>
+    <div class="nav background">
+    <%= link_to root_path, class: "left-arrow-link background" do %>
+      <%= image_tag 'back-arrow.svg', class: "left-arrow background" %>
+      <% end %>
+    <p class="registration background">CATEGORIES</p>
+    <%= link_to "SIGN OUT", destroy_user_session_path, data:{turbo_method: :delete}, class: "sign-out-btn" %>
+    </div>
+
+    <% @groups.each do |group| %>
+      <div class="category">
+        <div class="category-div">
+          <%= link_to group_path(group), class: "group-link" do %>
+            <p><%= image_tag group.icon, class: "Cat-image" %></p>
+            <div class="name-amount">
+              <h2><%= group.name %></h2>
+              <p class="group-date"><%= group.created_at.strftime('%B %d, %Y') %></p>
+            </div>
+          <% end %>
+          <div class="amt-div">
+            <p class="total-amount">$<%= group.entities.sum(:amount) %></p>
+          </div>
+        </div>
+      </div>
+      
+    <% end %>
+  </div>
+  <div class="Add-new-category-container">
+    <%= link_to "Add New Category", new_group_path, class: "add-category-button" %>
+  </div>
+</div>

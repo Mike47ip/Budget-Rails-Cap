@@ -1,0 +1,101 @@
+/* navbar */
+.left-arrow-link {
+  text-decoration: none;
+  background-color: #c3c9cf;
+}
+
+.nav {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  padding: 0 2%;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.registration {
+  font-weight: bold;
+}
+
+.background {
+  background-color: rgb(18, 91, 151);
+}
+
+#login-link {
+  cursor: pointer;
+}
+
+/* other */
+
+.login-screen {
+  text-align: center;
+  padding-top: 5%;
+  background-color: #f5f4f4;
+}
+
+.custom-login-form {
+  background: white;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-field {
+  width: 100%;
+  padding: 18px;
+  border: none;
+  background-color: #fff;
+  font-size: 15px;
+  margin-bottom: 15px; /* Adjusted margin */
+}
+
+.custom-field label {
+  font-size: 14px;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.custom-field input[type="email"],
+.custom-field input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.custom-field input[type="password"] {
+  border-top: 3px solid #4caf50;
+}
+
+.custom-login-button {
+  font-size: 16px;
+  padding: 10px;
+  background-color: #070a07;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-login-button:hover {
+  background-color: #45a049;
+}
+
+.custom-actions {
+  margin-top: 15px;
+}
+
+.links-check {
+  text-align: center;
+}

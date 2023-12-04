@@ -1,0 +1,51 @@
+<div class="category-index">
+  <div>
+    <div class="nav background">
+      <%= link_to group_entities_path(@group), class: "left-arrow-link background" do %>
+        <%= image_tag 'back-arrow.svg', class: "left-arrow background" %>
+      <% end %>
+      <p class="registration background">ADD NEW TRANSACTION</p>
+      <p class="background" id="next-btn">Save</p>
+    </div>
+
+    <%= form_with(model: [@group, @entity], url: group_entities_path(@group), method: :post) do |form| %>
+      <% if @entity.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@entity.errors.count, "error") %> prohibited this transaction from being saved:</h2>
+
+          <ul>
+            <% @entity.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div class="custom-fieldsss">
+        <%= form.text_field :name, required: true, placeholder: 'Name' %>
+      </div>
+
+      <div class="custom-fieldsss">
+        <%= form.number_field :amount, required: true, placeholder: 'Amount' %>
+      </div>
+
+      <div class="custom-fieldss">
+        <%= form.label :group_ids, "Select Category", class: "formlabel" %>
+        <%= form.collection_select(:group_ids, Group.all, :id, :name, { selected: @entity.group_ids, multiple: true, required: true }) %>
+      </div>
+
+      <div class="actions">
+        <%= form.submit 'Save', style: 'display: none', id: 'save-btn' %>
+        <%= button_tag 'Next', type: 'button', id: 'next-btn-submit', style: 'display: none' %>
+      </div>
+    <% end %>
+  </div>
+  <%= link_to 'Back to Transactions', group_entities_path(@group), class: "add-category-button" %>
+</div>
+
+<script>
+document.getElementById('next-btn').addEventListener('click', function() {
+  document.getElementById('save-btn').click();
+  Turbolinks.visit(window.location.toString());
+});
+</script>

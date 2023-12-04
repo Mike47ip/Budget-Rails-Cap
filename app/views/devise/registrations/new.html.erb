@@ -1,0 +1,33 @@
+<div class="nav background">
+  <%= link_to root_path, class: "signup-left-arrow-link background" do %>
+    <%= image_tag 'back-arrow.svg', class: "left-arrow background" %>
+  <% end %>
+  <p class="registration background">REGISTER</p>
+  <p class="background" id="signup-next-btn">Next</p>
+</div>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { id: 'signup-form' }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="custom-field">
+    <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: 'Full Name' %>
+  </div>
+
+  <div class="custom-field">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email' %>
+  </div>
+
+  <div class="custom-field">
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: 'Password (6 characters minimum)'  %>
+  </div>
+
+  <div class="custom-field">
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: 'Password confirmation'  %>
+  </div>
+<% end %>
+
+<script>
+  document.getElementById("signup-next-btn").addEventListener("click", function() {
+    document.getElementById("signup-form").submit();
+  });
+</script>

@@ -1,0 +1,24 @@
+<div class="nav background">
+  <%= link_to groups_path, class: "left-arrow-link background" do %>
+    <%= image_tag 'back-arrow.svg', class: "left-arrow background" %>
+  <% end %>
+  <p class="registration background">ADD NEW CATEGORY</p>
+  <p class="background" id="next-btn">Save</p>
+</div>
+
+<%= form_with model: @group do |form| %>
+  <div class="custom-field">
+    <%= form.text_field :name, required: true, placeholder: 'Name' %>
+  </div>
+  <div class="custom-fieldss">
+    <%= form.file_field :icon, required: true %>
+  </div>
+  <%= form.submit(style: 'display: none', id: 'submit-btn') %>
+<% end %>
+
+<script>
+  document.getElementById('next-btn').addEventListener('click', function() {
+    // Trigger the form submission when "Next" is clicked
+    document.getElementById('submit-btn').click();
+  });
+</script>

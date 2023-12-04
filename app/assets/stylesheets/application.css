@@ -1,0 +1,28 @@
+@import "splash_screen";
+@import "login";
+@import "category";
+@import "forgot_password";
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/assets/fonts/proxima_nova_regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/assets/fonts/proxima_nova_bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+html,
+body {
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
