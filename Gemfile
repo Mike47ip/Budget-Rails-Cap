@@ -66,6 +66,8 @@ group :development do
   # gem "spring"
 end
 
+gem 'tzinfo-data'
+
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'

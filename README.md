@@ -137,7 +137,7 @@ To run tests, run the following command:
 ### Live demo & video presentation
 
   - [Live demo](https://budget-capp1.onrender.com/)
-  - [Video presentation](https://www.loom.com/share/895b0b3aa2b2494fa5b5d7150246e7f2)
+  - [Video presentation](https://www.loom.com/share/0ac40a2d7896492b90296fd14f4271e1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -184,7 +184,7 @@ If you like this project please show support by staring ⭐️.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - Thanks to the Microverse team for the great curriculum.
-- Thanks to  Gregoire Vella on Behance for the design presentation.
+- Thanks to [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) the [author of the original design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=),[Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/).
 - Thanks to the Code Reviewer(s) for the insightful feedback.
 - Thanks to our coding partners, the morning session team, and the standup team for their cooperation.
   
